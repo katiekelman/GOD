@@ -1,0 +1,19 @@
+{
+  "name": "god",
+  "version": "1.0.0",
+  "description": "Grow Old Disgracefully Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx servor --browse --reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiekelman/GOD.git"
+  },
+  "author": "Katie Kelman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katiekelman/GOD/issues"
+  },
+  "homepage": "https://github.com/katiekelman/GOD#readme"
+}
