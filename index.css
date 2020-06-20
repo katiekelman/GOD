@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #c8e8e5;
+  color: #2e3635;
+  margin: 0;
+}
+
+a {
+  color: #2e3635;
+}
+
+a:visited {
+  color: #3b8884;
+}
+
+header,
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+header {
+  text-align: center;
+}
+
+header > * + * {
+  margin-top: 32px;
+}
+
+nav {
+  margin-top: 16px;
+}
