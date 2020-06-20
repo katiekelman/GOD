@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   background: #c8e8e5;
   color: #2e3635;
   margin: 0;
@@ -12,6 +12,7 @@ body {
 
 a {
   color: #2e3635;
+  font-size: 24px;
 }
 
 a:visited {
@@ -35,4 +36,14 @@ header > * + * {
 
 nav {
   margin-top: 16px;
+}
+
+nav > * + * {
+  margin-left: 16px;
+}
+
+footer {
+  text-align: center;
+  background: #e9f6f4;
+  padding: 32px;
 }
