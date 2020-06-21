@@ -24,6 +24,8 @@ main {
   max-width: 960px;
   margin: 0 auto;
   padding: 32px;
+  font-size: 32px;
+  letter-spacing: 4px;
 }
 
 header {
@@ -46,4 +48,41 @@ footer {
   text-align: center;
   background: #e9f6f4;
   padding: 32px;
+}
+
+article {
+  line-height: 80%;
+  text-align: left;
+}
+
+h2 {
+  font-size: 32px;
+  padding: 16px;
+  padding-left: 0px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 24px;
+  padding: 8px;
+  padding-left: 0px;
+  letter-spacing: 1px;
+  padding-top: 64px;
+}
+p {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+p1 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+p2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+#painting {
+  width: 720px;
+  height: 520px;
+  margin-top: 64px;
 }
