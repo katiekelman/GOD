@@ -98,3 +98,21 @@ h4 {
 #contactemail {
   text-align: center;
 }
+
+#leaves {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  float: right;
+  padding-left: 64px;
+  padding-right: 32px;
+  height: 560px;
+  width: 490px;
+}
+#demobox {
+  background-color: #e9f6f4;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 32px;
+}
