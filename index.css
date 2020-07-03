@@ -3,22 +3,28 @@
   margin: 0;
   flex: none;
 }
-
+html {
+  font-size: calc(14px + 1vmin);
+}
 body {
   font-family: "Open Sans Condensed", sans-serif;
-  background: #c8e8e5;
+  background: #cfded1;
   color: #2e3635;
   margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 article > img {
   width: 100%;
   height: auto;
-  padding: 16px;
+  padding: 1rem;
 }
 a {
   color: #2e3635;
   font-size: 24px;
-  background: #c8e8e5;
   text-align: center;
   margin: 0 auto;
 }
@@ -27,7 +33,6 @@ a:visited {
   color: #3b8884;
 }
 
-header,
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -36,38 +41,65 @@ main {
 }
 
 header {
-  text-align: center;
+  background: linear-gradient(#9ed4f2, #c6eaff);
+  padding-top: 64px;
 }
 
 header > * + * {
   margin-top: 32px;
 }
 h1 {
-  background-color: #e9f6f4;
+  font-family: "Comic Sans MS";
 }
 nav {
-  margin-top: 16px;
+  transform: translate(0, -120%);
+  width: 100%;
+  text-align: center;
 }
-
+nav > a {
+  font-size: 1rem;
+}
 nav > * + * {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 footer {
   text-align: center;
-  background: #e9f6f4;
-  padding: 16px;
-  margin-top: 16px;
+  background: #b4c9b6;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+section > * + * {
+  margin-top: 2rem;
 }
 
 article {
   line-height: 80%;
   text-align: left;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+article > div {
+  flex: 1 1 100px;
+  background: white;
+  padding: 2%;
+  border-radius: 0.5rem;
+}
+article > div img {
+  border-radius: 0.2rem;
+}
+article > * + * {
+  margin-left: 1rem;
 }
 
+article > div:nth-child(2) {
+  transform: rotate(1deg);
+}
 h2 {
   font-size: 32px;
-  padding: 16px;
+  padding: 1rem;
   padding-left: 0px;
   letter-spacing: 1px;
 }
@@ -79,10 +111,8 @@ h3 {
   padding-top: 64px;
 }
 p {
-  font-size: 24px;
-  letter-spacing: 1px;
-  padding: 32px;
-  padding-left: 0px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 h4 {
@@ -112,5 +142,47 @@ h4 {
   text-align: center;
   width: 100%;
   display: block;
-  padding: 16px;
+  padding: 1rem;
+}
+#logo {
+  width: 100%;
+}
+
+.feature {
+  background: #b4c9b6;
+  padding: 2rem;
+  padding-top: 0;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.feature > article {
+  transform: translate(0, -20%);
+}
+
+#cloudleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  animation: bob 5s infinite;
+}
+#cloudright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  animation: bob 5s infinite;
+}
+
+@keyframes bob {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
