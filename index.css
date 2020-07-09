@@ -225,8 +225,7 @@ h4 {
 }
 
 #paperplane {
-  width: 400px;
-  height: 300px;
+  max-width: 10rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
