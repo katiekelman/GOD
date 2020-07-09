@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   flex: none;
+  position: relative;
+  padding: 0;
 }
 html {
   font-size: calc(16px + 1vmin);
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background: #cfded1;
   color: #2e3635;
   margin: 0;
@@ -59,16 +61,7 @@ header {
   overflow: hidden;
 }
 
-h1 {
-  font-family: "Comic Sans MS";
-  padding: 1rem;
-  line-height: 2rem;
-  text-align: center;
-}
 nav {
-  /* position: absolute;
-  bottom: 0; */
-  /* transform: translate(0, 30%); */
   width: 100%;
   text-align: center;
 }
@@ -322,7 +315,7 @@ h4 {
 }
 
 #art1::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: #b4c9b6;
@@ -334,6 +327,7 @@ h4 {
   border-radius: 1rem;
   padding: 2rem;
 }
+
 @font-face {
   font-family: Pompiere;
   src: url(pompiere/Pompiere-Regular.otf);
@@ -341,8 +335,8 @@ h4 {
 
 #art2 {
   padding: 1rem;
-  margin: 7rem 0;
-  font-family: "Pompiere";
+  margin: 5rem 0 3rem;
+  font-family: 'Pompiere';
   font-size: 2rem;
   line-height: 150%;
 }
@@ -351,7 +345,6 @@ h4 {
   border-radius: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
   margin-bottom: -2rem;
   z-index: 2;
   position: relative;
@@ -363,14 +356,27 @@ h2 {
 }
 
 #rules {
-  border: 3rem solid #c0b4a9;
-  background: white;
+  background: #c0b4a9;
+  margin-top: 3rem;
   padding: 2rem;
   border-radius: 1rem;
-  border-top-width: 4rem;
-  padding-bottom: 7rem;
-  padding-top: 8rem;
-  margin-top: 3rem;
+}
+#rules > div {
+  background: white;
+  padding: 3rem 3rem 4rem;
+}
+
+@media (max-width: 480px) {
+  #rules {
+    padding: 1rem;
+  }
+  #rules > div {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+#rules > div > * + * {
+  margin-top: 1rem;
 }
 
 #arttitle {
@@ -378,43 +384,34 @@ h2 {
 }
 
 #toenter {
-  /* background: #b4c9b6;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  font-size: 1.5rem;
-   */
   text-align: left;
+  word-break: break-word;
 }
 
 h1 {
-  /* text-align: left;
-  color: white;
-  position: relative;
-  background: #b4c9b6;
-  border-radius: 1rem; */
   color: #bf3d3d;
   text-align: left;
-  padding: 3rem 0;
 }
 
 #clipboard {
   max-width: 40%;
-  margin: 0 auto;
-  margin-top: -11rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -70%);
 }
 
 #terms {
-  font-size: 1rem;
   text-align: left;
-  margin: 5rem 5rem;
-  line-height: 2rem;
 }
 
 #tcheader {
-  font-size: 2rem;
-  margin: 0 9rem;
-  background-color: #b4c9b6;
-  border-radius: 1rem;
-  text-align: center;
-  padding: 1rem;
+  text-align: left;
+  line-height: 138%;
+}
+
+#tac > section {
+  background: #fff;
+  padding: 4rem;
+  box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.038);
 }
