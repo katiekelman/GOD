@@ -70,7 +70,7 @@ nav > a {
   font-size: calc(1rem + 1vmax);
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   line-height: 100%;
 }
 
@@ -414,4 +414,10 @@ h1 {
   background: #fff;
   padding: 4rem;
   box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.038);
+}
+
+@media (max-width: 480px) {
+  #tac > section {
+    padding: 2rem 2rem;
+  }
 }
