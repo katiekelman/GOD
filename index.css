@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   background: #cfded1;
   color: #2e3635;
   margin: 0;
@@ -74,6 +74,11 @@ nav > a {
   line-height: 100%;
 }
 
+nav > a:hover {
+  color: #708f73;
+  font-size: calc(1.1rem + 1vmax);
+}
+
 nav > * + * {
   margin-left: 1rem;
 }
@@ -92,7 +97,6 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.38);
 }
-
 #napatext {
   margin-left: auto;
   margin-right: auto;
@@ -113,6 +117,7 @@ footer {
 
 #carousel {
   position: relative;
+  margin-top: 6rem;
 }
 
 #carousel > div {
@@ -197,7 +202,7 @@ h2 {
   padding: 1rem;
   padding-left: 0px;
   letter-spacing: 1px;
-  font-size: calc(1rem + 2vmax);
+  font-size: calc(1rem + 1vmax);
 }
 
 h3 {
@@ -215,13 +220,19 @@ b {
   display: block;
   width: 100%;
   text-align: center;
-  font-size: calc(1rem + 2vmax);
+  font-size: calc(1rem + 1vmax);
   line-height: 138%;
 }
 
 h4 {
   text-align: center;
   text-transform: uppercase;
+}
+
+h4 > a {
+  font-size: inherit;
+  color: inherit;
+  margin-left: 0.2ch;
 }
 
 #paperplane {
@@ -314,7 +325,7 @@ h4 {
 }
 
 #art1::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: #b4c9b6;
@@ -333,11 +344,13 @@ h4 {
 }
 
 #art2 {
-  padding: 1rem;
-  margin: 5rem 0 3rem;
-  font-family: 'Pompiere';
+  padding: 3rem 1rem;
+  margin: 1rem 0 6rem;
+  font-family: "Pompiere";
   font-size: 2rem;
   line-height: 150%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #painting {
@@ -419,4 +432,32 @@ h1 {
   #tac > section {
     padding: 2rem 2rem;
   }
+}
+
+#emailfooter {
+  font-size: 0.8rem;
+}
+
+#judges {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+#donate {
+  background: #e2c8e2;
+  border: 9px solid #cbb0cb;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: -5rem;
+  display: block;
+  max-width: 15rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.41);
 }

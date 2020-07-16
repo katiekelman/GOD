@@ -18,29 +18,28 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-32469126-7');
+      gtag("config", "UA-32469126-7");
     </script>
   </head>
 
   <body>
     <header>
-      <img src="header.svg" id="logo" />
+      <img src="header-2.svg" id="logo" />
       <img src="cloud.svg" id="cloudright" />
       <img src="cloud.svg" id="cloudleft" />
     </header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/events.html">Art Competition</a>
-      <a href="/contact.html">Contact</a>
+    <nav id="mainmenu">
+      <a href="/#mainmenu">Home</a>
+      <a href="/events.html#mainmenu">Art Competition</a>
+      <a href="/contact.html#mainmenu">Contact</a>
     </nav>
     <main>
-      <img src="artcompheader.svg" id="arttitle" />
-
       <section>
         <img src="painting.jpg" id="painting" />
         <div id="art1">
+          <img src="artcompheader.svg" id="arttitle" />
           <p>
             In this “year of the lockdown” we are giving a prize for the best
             artwork entitled “Happy Times” produced by an artist over the age of
@@ -50,6 +49,7 @@
             you are feeling especially disgraceful! <br />
           </p>
         </div>
+        <img src="judges.svg" id="judges" />
         <p id="art2">
           The best 20 entries will be shortlisted and displayed on our website
           in the middle of September and the winner will be announced by the end
@@ -126,8 +126,14 @@
         Grow Old Disgracefully Charitable Trust
       </h3>
       <h4>
-        Charity Number 1131498
+        Charity Number<a
+          href="https://beta.charitycommission.gov.uk/charity-details/?regid=1131498&subid=0"
+          >1131498</a
+        >
       </h4>
+      <a href="mailto:contact@growolddisgracefully.co.uk" id="emailfooter"
+        >contact@growolddisgracefully.co.uk</a
+      >
     </footer>
   </body>
 </html>
