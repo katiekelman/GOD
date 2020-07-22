@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background: #cfded1;
   color: #2e3635;
   margin: 0;
@@ -42,7 +42,7 @@ a:active {
 }
 
 main {
-  max-width: 1080px;
+  max-width: 90ex;
   margin: 0 auto;
   padding: 3rem;
   overflow: hidden;
@@ -92,7 +92,7 @@ nav > * + * {
 footer {
   text-align: center;
   background: #b4c9b6;
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
   font-size: 0.62rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.38);
@@ -325,7 +325,7 @@ h4 > a {
 }
 
 #art1::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: #b4c9b6;
@@ -346,7 +346,7 @@ h4 > a {
 #art2 {
   padding: 3rem 1rem;
   margin: 1rem 0 6rem;
-  font-family: "Pompiere";
+  font-family: 'Pompiere';
   font-size: 2rem;
   line-height: 150%;
   border-top: 1px solid black;

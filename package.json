@@ -4,7 +4,7 @@
   "description": "Grow Old Disgracefully Website",
   "main": "index.js",
   "scripts": {
-    "start": "npx servor --browse --reload --editor"
+    "start": "npx servor --browse --reload --editor --static"
   },
   "repository": {
     "type": "git",
