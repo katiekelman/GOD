@@ -56,9 +56,16 @@ main {
 
 header {
   background: linear-gradient(#9ed4f2, #c6eaff);
-  padding-top: 10%;
+  padding-top: 5%;
   position: relative;
   overflow: hidden;
+}
+
+#wordmark {
+  max-width: 32rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2vw;
 }
 
 nav {
