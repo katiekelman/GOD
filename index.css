@@ -82,7 +82,6 @@ nav > a {
 
 nav > a:hover {
   color: #708f73;
-  font-size: calc(1.1rem + 1vmax);
 }
 
 nav > * + * {
@@ -125,9 +124,12 @@ footer img {
   margin-right: auto;
   padding: 3rem 0;
   padding-top: 4rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.38);
   border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  font-family: 'Pompiere';
+  font-size: 1.4rem;
+  line-height: 150%;
 }
 
 #napa {
@@ -140,7 +142,8 @@ footer img {
 
 #carousel {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 3rem;
+  transform: scale(0.9);
 }
 
 #carousel > div {
@@ -201,11 +204,8 @@ article > div {
   flex: 1 1 100px;
   background: white;
   padding: 1.62%;
-  border-radius: 0.5rem;
 }
-article > div img {
-  border-radius: 0.2rem;
-}
+
 article > * + * {
   margin-left: 1rem;
 }
@@ -304,7 +304,7 @@ h4 > a {
 }
 
 .feature > article {
-  transform: translate(0, -20%);
+  transform: translate(0, -25%);
   margin-bottom: -1rem;
 }
 
@@ -345,7 +345,7 @@ h4 > a {
 #art1 {
   text-align: center;
   padding: 1rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   border-radius: 1rem;
   position: relative;
 }
@@ -359,7 +359,7 @@ h4 > a {
   top: -2rem;
   left: -2rem;
   z-index: 0;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
   border-radius: 1rem;
   padding: 2rem;
 }
@@ -370,20 +370,20 @@ h4 > a {
 }
 
 #art2 {
-  padding: 3rem 1rem;
-  margin: 1rem 0 6rem;
+  padding: 2rem 1rem;
+  margin: 1rem 0 4rem;
   font-family: 'Pompiere';
   font-size: 2rem;
   line-height: 150%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.38);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
 }
 
 #painting {
-  border-radius: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -2rem;
+  margin-bottom: -3rem;
+  max-width: 40rem;
   z-index: 2;
   position: relative;
 }
@@ -395,9 +395,10 @@ h2 {
 
 #rules {
   background: #c0b4a9;
-  margin-top: 3rem;
+  margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
+  max-width: 40rem;
 }
 #rules > div {
   background: white;
@@ -418,7 +419,7 @@ h2 {
 }
 
 #arttitle {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 #toenter {
@@ -465,8 +466,8 @@ h1 {
 }
 
 #judges {
-  margin-top: 8rem;
-  margin-bottom: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
 
 #donate {
