@@ -408,9 +408,11 @@ h2 {
 @media (max-width: 480px) {
   #rules {
     padding: 1rem;
+    font-size: 0.8rem;
+    line-height: 150%;
   }
   #rules > div {
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 1.2rem 2rem;
   }
 }
 
@@ -425,11 +427,20 @@ h2 {
 #toenter {
   text-align: left;
   word-break: break-word;
+  font-size: 1rem;
+  line-height: 180%;
 }
 
 h1 {
+  font-size: 2rem;
   color: #bf3d3d;
   text-align: left;
+  margin: 1.62rem 0;
+}
+
+hr {
+  display: block;
+  opacity: 0.2;
 }
 
 #clipboard {
