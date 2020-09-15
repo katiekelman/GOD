@@ -556,3 +556,21 @@ hr {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.41);
 }
+
+#shortlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 2rem;
+  place-items: center;
+}
+
+#shortlist img {
+  margin-bottom: 1rem;
+  border: 0.5rem solid #c0b4aa;
+}
+
+@media (max-width: 480px) {
+  #shortlist {
+    grid-gap: 1rem;
+  }
+}
