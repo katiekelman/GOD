@@ -580,3 +580,63 @@ hr {
     grid-gap: 1rem;
   }
 }
+
+#winner p {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#winner img {
+  max-width: 2rem;
+  flex: none;
+  margin-right: 0.62rem;
+}
+
+#winner div {
+  display: flex;
+  align-items: center;
+  /* transform: translateY(50%); */
+  margin-bottom: 1rem;
+}
+
+#winner {
+  background: #b4c9b6;
+  padding: 2rem 3rem 1rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 480px) {
+  #winner {
+    padding: 1.62rem 1rem;
+  }
+}
+
+#runners-up {
+  display: flex;
+  padding: 3rem 0;
+}
+
+@media (max-width: 480px) {
+  #runners-up {
+    padding: 2rem 0;
+  }
+}
+
+#runners-up div:first-child {
+  flex: 1 1 32%;
+}
+#runners-up div:last-child {
+  flex: 1 1 58.9%;
+  margin-left: 5%;
+}
+
+#runners-up img {
+  border: 0.5rem solid #c0b4aa;
+  margin-bottom: 1rem;
+}
+
+#runners-up h5 {
+  margin-top: 0rem;
+  line-height: 100%;
+  font-size: 0.8rem;
+}
